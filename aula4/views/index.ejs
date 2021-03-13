@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula 4 - Exemplo 1 EJS</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <h1>Olá EJS</h1>
+  <p>Estamos funcionando...</p>
+  <hr>
+  <h3>Renderizando variáveis</h3>
+
+  <h5><%= name %></h5>
+  <%= faculdade %> <br>
+  A turma está no modelo: <strong><%= remoto %> </strong> <br>
+  O curso que fazemos é <%= curso %>
+
+
+  <h3>Condicionais</h3>
+  <% if(!exibirNotificacao) { %>
+    <strong>Error:</strong> Não foi possivel exibir a informação solicitada.
+  <% } else { %>
+    <strong>Correto:</strong> 
+    Tudo Certo, renderizando conforme esperado....
+  <% } %>
+</body>
+</html>

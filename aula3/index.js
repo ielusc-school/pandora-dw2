@@ -4,7 +4,6 @@ const express = require('express');
 // instanciando o express 
 const app = express()
 
-
 // criando nossa primeira rota com express X)
 app.get('/', (req, res) => {
   // req(request)
@@ -61,9 +60,9 @@ app.get('/shop/apple', (req,res) => {
   if(!produto) {
     res.send('Oush, não foi inserido nenhum produto para filtro.');
   } else {
-    res.send(produto);
+    // res.send(produto);
+    // res.json({ user: 'juninho da brahma' });
   }
-
 });
 
 
