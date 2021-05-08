@@ -1,5 +1,7 @@
 ## Projeto ASK
 
+![](./public/img/ask-logo.png)
+
 1. crie um projeto node no diretório a sua escolha
 > npm init
 
