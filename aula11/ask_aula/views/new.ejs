@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<%- include('./partials/header.ejs') %>
+<body>
+<%- include('./partials/navbar.ejs') %>
+
+<div class="container">
+  <h1>Adicionar Novo Tópico</h1>
+
+  <form action="/salvar" method="POST">
+    <div class="form-group">
+      <label for="topicTitle">Tópico</label>
+      <input 
+        type="text" 
+        class="form-control" 
+        id="topicTitle" 
+        name="titulo"
+        aria-describedby="topicTitleHelp" 
+        placeholder="Insira um tópico">
+      <small 
+      id="topicTitleHelp" 
+      class="form-text text-muted">
+      Coloque um tópico que seja com termos relevantes, facilitará na busca.
+      </small>
+    </div>
+    <div class="form-group">
+      <label for="topicDescription">Descrição</label>
+      <textarea 
+          class="form-control" 
+          id="topicDescription"
+          cols="30"
+          name="descricao"
+          rows="10"
+          placeholder="Insira a descrição da sua dúvida...">
+      </textarea>
+    </div>
+    <button 
+      type="submit" 
+      class="btn btn-primary">Salvar
+    </button>
+  </form>
+</div>
+  
+<%- include('./partials/footer.ejs') %>
+</body>
+</html>
