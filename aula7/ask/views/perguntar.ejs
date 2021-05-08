@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guia de Perguntas</title>
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-light bg-primary">
+    <a href="/" class="navbar-brand">
+      <img 
+        src="/img/ask-logo.png" 
+        alt="Ask" 
+        title="Ask"
+        width="15%">
+    </a>
+  </nav>
+    <div class="container">
+      <div class="card mt-4">
+        <div class="card-header">
+          <h3>Realizar pergunta</h3>
+        </div>
+        <div class="card-body">
+          <form action="/salvarpergunta" method="POST">
+            <label for="">Insira o título?</label>
+            <input 
+              type="text"
+              name="titulo" 
+              placeholder="Título" 
+              class="form-control">
+            <label for="">Descreva sua dúvida.</label>
+            <textarea 
+              name="descricao" 
+              id="" 
+              cols="30" 
+              rows="10" 
+              class="form-control">
+            </textarea>
+            <button 
+              class="btn btn-primary mt-3">Enviar pergunta
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
